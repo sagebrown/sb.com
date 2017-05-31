@@ -1,160 +1,278 @@
-/**
- * Reset some basic elements
- */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
-    margin: 0;
-    padding: 0;
+@font-face {
+    font-family: 'CallunaSansRegular';
+    src: url('CallunaSansRegular-webfont.woff2') format('woff2'),
+         url('CallunaSansRegular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    font-family: 'CallunaSansRegular', Arial, sans-serif;
+    line-height: 24px;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 100%;
+}
+
+#container {
+	overflow: scroll;
+	height: 100%;
+}
+
+#header, #footer {
+	display: none;
+}
+
+#nav {
+    height: 100%;
+    z-index: 20;
+    max-width: 250px;
+    width: 15%;
+    padding: 0 50px 0 90px;
+    float: left;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.section {
+	margin-bottom: $spacing-unit !important;
+}
+
+.social {
+	margin-left: -5px;
+	height: 24px;
+}
+
+.instagram, .twitter {
+	height: 24px;
+	width: 24px;
+	float: left;
+	overflow: hidden;
+	line-height: 200px;
+	margin-right: 6px;
+	opacity: .4;
+}
+
+.instagram:hover, .twitter:hover {
+	opacity: 1;
+}
+
+.instagram {
+	background: url(/images/social-instagram.png) no-repeat;
+}
+
+.twitter {
+	background: url(/images/social-twitter.png) no-repeat;
+}
+
+#footer .social {
+	display: inline-block;
+	margin: 0 auto;
 }
 
 
+/* Gallery */
 
-/**
- * Basic styling
- */
-body {
-    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-    color: $text-color;
-    background-color: $background-color;
-    -webkit-text-size-adjust: 100%;
-    -webkit-font-feature-settings: "kern" 1;
-    -moz-font-feature-settings: "kern" 1;
-    -o-font-feature-settings: "kern" 1;
-    font-feature-settings: "kern" 1;
-    font-kerning: normal;
+.row {
+
+	height: 85%;
+	padding-right: 200px;
+}
+.row img {
+	max-height: 100%;
+	max-width: 100%;
+	float: left;
+	margin-right: 50px;
+	cursor: pointer;
 }
 
-
-
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+.next-up {
+	float: left;
+	height: 100%;
+	max-height: 100%;
 }
 
+.next-link, .next-img {
+	width: 50%;
+	float: left;
 
-
-/**
- * Images
- */
-img {
-    max-width: 100%;
-    vertical-align: middle;
 }
 
-
-
-/**
- * Figures
- */
-figure > img {
-    display: block;
+.next-link p {
+	margin-right: 50px;
+	text-align: right;
 }
 
-figcaption {
-    font-size: $small-font-size;
+.next-img img {
+	max-height: 500px;
 }
 
-
-
-/**
- * Lists
- */
-ul, ol {
-    margin-left: $spacing-unit;
+.v-center {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
-li {
-    > ul,
-    > ol {
-         margin-bottom: 0;
-    }
+.row #title {
+	/* background: #FDFDFD; */
+	/* color: #999; */
+	/* border: 1px solid #ccc; */
+	float: left;
+	max-width: 800px;
+	/* min-width: 530px; */
+	width: 100%;
+	height: 100%;
+	margin: 0 50px 0 0;
+	/* cursor: pointer; */
+}
+#title p {
+	/* border: 1px solid red; */
+	/* padding: 96px 0 0 0; */
+	float: left;
+	margin: 0px 20% 0 10%;
+	font-size: 14px;
+	/* top: 30%; */
 }
 
+/* type */
 
-
-/**
- * Headings
- */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: $base-font-weight;
+h1 {
+    font-size: 28px;
+    margin-bottom: $spacing-unit;
 }
 
+.primary {
+    font-size: $base-font-size;
+}
 
+.secondary {
+    font-size: $secondary-font-size;
+    color: $secondary-color;
+}
 
-/**
- * Links
- */
 a {
-    color: $brand-color;
-    text-decoration: none;
-
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
-
-    &:hover {
-        color: $text-color;
-        text-decoration: underline;
-    }
+	text-decoration: none;
+	color: $text-color;
 }
 
+a:hover, .selected {
+	text-decoration: underline;
+}
+
+h1 a:hover {
+	text-decoration: none;
+}
+
+/* media queries */
 
 
-/**
- * Blockquotes
- */
-blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
-    padding-left: $spacing-unit / 2;
-    font-size: 18px;
-    letter-spacing: -1px;
-    font-style: italic;
+@media only screen and (max-width: 1900px) {
+  #header, #footer {
+	display: none !important;
+}
+}
 
-    > :last-child {
-        margin-bottom: 0;
+@media only screen and (max-width: 1440px) {
+	#nav {
+		padding: 0 40px 0 70px;
+	}
+    .row {height: 75%;}
+
+    #header, #footer {
+		display: none !important;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	#container {
+		text-align: center;
+		max-width: 100%;
+		height: auto;
+		/* border: 1px solid red; */
+		/* height: 80%; */
+		overflow: visible;
+	}
+
+	#header, #footer {
+		display: block !important;
+		text-align: center;
+		margin: 0 !important;
+	}
+
+	.row {
+		width: 90% !important;
+		margin: 0px auto;
+		text-align: center;
+		padding: 0;
+		/* height: 100%; */
+	}
+
+	.row img {
+		margin: 0 auto 30px auto;
+		float: none;
+
+	}
+
+	#nav {
+    	display: none;
     }
-}
 
 
-
-/**
- * Code formatting
- */
-pre,
-code {
-    font-size: 15px;
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #eef;
-}
-
-code {
-    padding: 1px 5px;
-}
-
-pre {
-    padding: 8px 12px;
-    overflow-x: auto;
-
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
+    .next-up {
+    	width: 100%;
+    	text-align: center;
     }
+
+    .next-link, .next-img {
+    	width: 100%;
+    	float: none;
+    	display: block;
+    	width: 100%;
+    	position: static;
+    	top: initial;
+    	transform: none;
+    }
+
+    .next-link p {
+    	margin: 0;
+    	text-align: center;
+    }
+
+    .next-img {
+
+    }
+
+    .v-center {
+		position: static;
+		top: 0;
+		transform: none;
+	}
+
+	#title {width: 100% !important;}
+
+	#title p {
+
+	}
+
+}
+
+@media only screen and (max-width: 680px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+
 }
 
 
 
 /**
  * Wrapper
- */
+
 .wrapper {
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
     max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
@@ -173,7 +291,7 @@ pre {
 }
 
 
-
+*/
 /**
  * Clearfix
  */

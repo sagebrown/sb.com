@@ -1,38 +1,113 @@
-<footer class="site-footer">
+  <div id="footer">
+  <ul class="section primary">
+  	<li><a href="fieldwork.html" class="">Fieldwork</a></li>
+  	<li><a href="intersections.html">Intersections</a></li>
+  	<li><a href="comesidice.html">Come si Dice</a></li>
+  </ul>
 
-  <div class="wrapper">
+  <ul class="section secondary">
+  	<li>Info</li>
+  	<li>Shop</li>
+  	<li>Blog</li>
+  </ul>
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
-    </div>
-
+  <div class="section social">
+  	<a href="http://instagram.com/sagebrown" class="instagram">Instagram</a>
+  	<a href="http://twitter.com/sage_brown" class="twitter">Twitter</a>
   </div>
+</div> <!-- footer -->
 
-</footer>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+
+<script type="text/javascript" charset="utf-8">
+
+
+			var numImages = $(".row").children().length+1;
+			var imgMargin = 50;
+			var scrollPos = $("#container").scrollLeft();
+
+			$(document).ready(setWidth());
+			$(window).on('load', function() {
+				setWidth();
+				//jQuery.easing.def = "easeOutQuad";
+			});
+
+			$(window).on('resize', function() {
+				setWidth();
+			});
+
+			function setWidth() {
+				var totalWidth = 0;
+				$(".row").children().each(function() {
+					totalWidth += $(this).width();
+				});
+
+			  	$(".row").width(totalWidth + (numImages*imgMargin));
+			  	//console.log($(".row").width());
+			  	rowX = $(".row").position().left;
+
+			  	//set title size
+			  	$("#title").width($(".row img").height()*.8);
+
+		  	}
+
+
+
+
+			$("#getPos").click(function() {
+				navWidth = $("#nav").outerWidth();
+				console.log(navWidth);
+
+			});
+
+			$(".row>img").click(function(){
+				$("#container").animate({
+					scrollLeft: $(this).position().left
+				}, 500, function(){
+					//done
+			});
+				});
+
+
+			/*$("#title").click(function(){
+				$("#container").animate({
+					scrollLeft: $("#title").width()+ 50
+				}, 500, function(){
+					console.log("done");
+			});
+			}); */
+
+
+				//console.log()
+
+				/*$(".row").animate({
+					left: "-=" + distance
+				}, 600, function () {
+					//done animating
+				});*/
+
+
+			/*$('body').on('mousewheel', function(event) {
+				if(event.deltaY > 0) {
+					scrollPos += 20;
+					//down
+				} else {
+					scrollPos -= 20;
+					//up
+				}
+
+			    $("#container").scrollLeft(scrollPos);
+
+			    event.preventDefault();
+			});
+
+			//$('#container').mousewheel(function(event) {
+			  //  $("#container").scrollLeft(event.deltaFactor);
+			//});
+
+*/
+
+
+		</script>		
