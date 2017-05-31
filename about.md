@@ -1,15 +1,11 @@
 ---
 title: About
 permalink: "/about/"
+images:
+- "/uploads/ONDA.jpg"
+- "/uploads/ONDA2.jpg"
+- "/uploads/Screen%20Shot%202017-05-25%20at%208.32.08%20AM.png"
 layout: page
 ---
 
-Hi my name is sage. 
-
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+Hi my name is sage.
