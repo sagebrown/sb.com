@@ -19,3 +19,8 @@ url: http://sagebrown.com
 twitter_username: sage_brown
 github_username: jekyll
 markdown: kramdown
+
+gallery:
+  image-assets:
+    title: images
+    output: true
