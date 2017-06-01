@@ -2,4 +2,14 @@
 layout: default
 ---
 
-<p>Welcome home.</p>
+{% assign sorted = site.posts | sort:"order" %}
+
+{% assign current_page = page %}
+
+
+{% for post in sorted %}
+  {% if post.order == page.order %}
+    <b>{{ post.order }}</b>
+    {%break%}
+  {% endif %}
+{% endfor %}

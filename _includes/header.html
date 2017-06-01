@@ -5,9 +5,11 @@
   <div class="v-center">
     <h1><a href="/">Sage Brown</a></h1>
     <ul class="section primary">
-    {% for post in site.posts %}
+      {% assign sorted = site.posts | sort:"order" %}
+
+    {% for post in sorted %}
       <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
+        <a href="{{ post.url }}"{% if post.order == page.order %}class="selected"{% endif %}>{{ post.title }}</a>
       </li>
     {% endfor %}
     </ul>

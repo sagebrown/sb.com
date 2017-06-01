@@ -17,7 +17,7 @@
 
             {% if contentStripped != ""  %}
             <div id="title">
-                <div class="v-center">{{ contentStripped }} </div>
+                <div class="v-center">{{ contentStripped }}</div>
             </div> <!-- title -->
             {% endif %}
 
@@ -25,30 +25,7 @@
               <img src="{{ image }}" />
             {% endfor %}
 
-
-        {% if page.next.url %}
-          <div class="next-up">
-            <div class="next-link v-center">
-              <p>Next Up</p>
-                <p><a href="{{page.next.url}}">{{page.next.title}}</a></p>
-            </div>
-            <div class="next-img v-center">
-              <a href="{{page.next.url}}"><img src="{{page.next.hero-image}}" /></a>
-            </div>
-          </div>	<!-- next up -->
-          {% endif %}
-
-          {% if page.previous.url %}
-            <div class="next-up">
-              <div class="next-link v-center">
-                <p>Next Up</p>
-                  <p><a href="{{page.previous.url}}">{{page.previous.title}}</a></p>
-              </div>
-              <div class="next-img v-center">
-                <a href="{{page.previous.url}}"><img src="{{page.previous.hero-image}}" /></a>
-              </div>
-            </div>	<!-- next up -->
-            {% endif %}
+            {% include pagination.html %}
 					</div> <!-- row -->
 				</div>	<!-- container -->
 			</div>
