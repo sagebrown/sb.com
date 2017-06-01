@@ -1,5 +1,5 @@
 ---
-permalink: "/mypageurl/"
+permalink: /mypageurl/
 ---
 
 <!DOCTYPE html>
@@ -19,7 +19,9 @@ permalink: "/mypageurl/"
               </div> <!-- title -->
             {% endif %}
 
-            {{ images }}
+            {% for images in page.images %}
+              <img src="{{ page.image }}" />
+            {% endfor %}
 					</div> <!-- row -->
 				</div>	<!-- container -->
 			</div>
