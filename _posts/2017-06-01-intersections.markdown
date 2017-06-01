@@ -7,8 +7,6 @@ images:
 - "/uploads/IMG_5878.jpg"
 - "/uploads/IMG_4701.jpg"
 - "/uploads/IMG_5868.jpg"
-- 
-- 
-layout: gallery
 ---
 
+Intersections of nature and industry.

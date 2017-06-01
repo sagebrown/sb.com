@@ -7,7 +7,7 @@ images:
 - "/uploads/IMG_3777.jpg"
 - "/uploads/IMG_6351.jpg"
 - "/uploads/IMG_6386.jpg"
-layout: gallery
+
 ---
 
 This is a story about friends in the desert.
