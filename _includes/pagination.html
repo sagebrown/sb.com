@@ -1,0 +1,33 @@
+{% assign sorted = site.posts | sort:"order" %}
+
+{% if page.collection %}
+  {% assign collection = site[page.collection] | sort: 'order' %}
+  {% assign prev = collection | last %}
+  {% assign next = collection | first %}
+
+  {% for item in collection %}
+    {% if item.title == page.title %}
+      {% unless forloop.first %}
+        {% assign prev = iterator %}
+      {% endunless %}
+
+      {% unless forloop.last %}
+        {% assign next = collection[forloop.index] %}
+      {% endunless %}
+    {% endif %}
+
+    {% assign iterator = item %}
+  {% endfor %}
+{% endif %}
+
+{% if next %}
+  <div class="next-up">
+    <div class="next-link v-center">
+      <p>Next Up</p>
+      <p><a href="{{ next.url }}">{{ next.title }}</a></p>
+    </div>
+    <div class="next-img v-center">
+      <a href="{{ next.url }}"><img src="{{ next.hero-image }}" /></a>
+    </div>
+  </div>	<!-- next up -->
+{% endif %}
