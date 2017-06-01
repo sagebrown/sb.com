@@ -5,9 +5,11 @@
   <div class="v-center">
     <h1><a href="index.html">Sage Brown</a></h1>
     <ul class="section primary">
-      <li><a href="fieldwork.html">Fieldwork</a></li>
-      <li><a href="intersections.html">Intersections</a></li>
-      <li><a href="comesidice.html">Come si Dice</a></li>
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
     </ul>
 
     <ul class="section secondary">
