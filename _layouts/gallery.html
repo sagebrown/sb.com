@@ -13,6 +13,8 @@ permalink: "/mypageurl/"
 
     <div id="container" class="clearfix">
 					<div class="row v-center">
+            my_variable is {% if content == blank %}blank{% else %}"{{ content }}"{% endif %}
+
 						{% if content %}
               <div id="title">
                 <div class="v-center">{{ content }}</div>
