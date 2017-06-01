@@ -1,0 +1,31 @@
+---
+permalink: /mypageurl/
+---
+
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div id="container" class="clearfix">
+					<div class="row v-center">
+						{% if content %}
+              <div id="title">
+                <p class="v-center">{{ content }}</p>
+              </div> <!-- title -->
+            {% endif %}
+
+            {{ images }}
+					</div> <!-- row -->
+				</div>	<!-- container -->
+			</div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
