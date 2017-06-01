@@ -14,13 +14,17 @@ defaults:
     type: posts
   values:
     layout: gallery
-    permalink: /:title/
-    hero-image:
+    permalink: "/:title/"
+    hero-image: 
     images:
+<<<<<<< HEAD
       -
       -
       -
 
+=======
+      image: 
+>>>>>>> 807b331de9bbd12713ff2f9272e91817c2b72fa6
 email: sage.brown@gmail.com
 description: Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for Google search
