@@ -2,11 +2,11 @@
 title: Sage Brown
 timezone: UTC
 collections:
-  featured-image:
-    title: Featured Image
-    output: true
   posts:
     title: Galleries
+    output: true
+  homepage:
+    title: Homepage
     output: true
   uploads:
     title: Uploads
