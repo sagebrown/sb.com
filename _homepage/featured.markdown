@@ -5,4 +5,3 @@ image: "/uploads/45002.jpg"
 Link: 
 ---
 
-Featured!
