@@ -1,6 +1,5 @@
 ---
 title: Sage Brown
-title-2: Photgrapher — Portland, Oregon
 timezone: UTC
 collections:
   posts:
@@ -19,17 +18,17 @@ defaults:
   values:
     layout: gallery
     permalink: "/:title/"
-    hero-image:
-    images:
+    hero-image: 
+    images: 
 - scope:
     path: ''
     type: homepage
   values:
-    image:
-    link:
+    image: 
+    link: 
+title-2: Photgrapher — Portland, Oregon
 email: sage.brown@gmail.com
 description: Sage Brown, editorial and commercial photographer in Portland, Oregon.
 baseurl: ''
 url: http://sagebrown.com
-
 markdown: kramdown
