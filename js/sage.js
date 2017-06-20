@@ -11,10 +11,9 @@
 
 			//$(document).ready(setWidth());
 			$(window).on('load', function() {
-        if(viewportWidth > mobileBreak) {
-          setWidth();
-          $(".title").css("line-height", $(".title").height() + "px");
-        }
+				setWidth();
+
+      $(".title").css("line-height", $(".title").height() + "px");
 				//jQuery.easing.def = "easeOutQuad";
     if(viewportWidth < mobileBreak) {
 
@@ -28,10 +27,9 @@
 			});
 
 			$(window).on('resize', function() {
-        if(viewportWidth > mobileBreak) {
-  				setWidth();
-          $(".title").css("line-height", $(".title").height() + "px");
-        }
+				setWidth();
+        $(".title").css("line-height", $(".title").height() + "px");
+
         if(viewportWidth < mobileBreak) {
 
             $(".title").each(function() {
@@ -70,7 +68,7 @@
 
 			});
 
-/*
+
       $("body").keydown(function(e) {
         if(e.keyCode == 37) { // left
           if(currentImage > 0) {
@@ -123,7 +121,7 @@
       $("html").scroll(function(){
         console.log(true);
       });
-*/
+
       $(".grid")
       .mouseover(function(){
         if(viewportWidth > mobileBreak) {

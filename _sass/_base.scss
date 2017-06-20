@@ -295,9 +295,12 @@ strong {
 	}
 }
 
+/* MOBILE */
+
 @media only screen and (max-width: 800px) {
 body, html {
-  overflow: scroll;
+  overflow-y: scroll; /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
 }
 	#container {
 		text-align: center;
