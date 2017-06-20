@@ -7,7 +7,14 @@ layout: default
 <div id="images" class="clearfix">
   {% for post in sorted %}
   <div class="grid">
-    <img src="{{ post.hero-image }}">
+    <img src="{{ post.hero-image }}" id="{{ post.slug }}-image-0" class="hero-thumb"/>
+    {% for image in post.images %}
+      {% if forloop.index < 5 %}
+        <img src="{{ image }}"  id="{{ post.slug }}-image-{{ forloop.index }}" class="secondary-thumb" />
+        {% else %}
+          {% break %}
+      {% endif %}
+    {% endfor %}
     <a href="{{ post.url }}" class="title">{{ post.title }}</a>
   </div>
   {% endfor %}

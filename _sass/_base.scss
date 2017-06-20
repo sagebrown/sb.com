@@ -78,6 +78,21 @@ ul {
 }
 
 
+/* INFO */
+
+.info {
+    width: 50%;
+}
+
+.info h2 {
+
+}
+
+.info p {
+  margin-bottom: 14px;
+  margin-top: 0;
+}
+
 /* Gallery */
 
 .row {
@@ -184,6 +199,7 @@ small {
   /*background: #ccc;*/
   margin: 25px;
   position: relative;
+  overflow: hidden;
 }
 
 .grid>img {
@@ -214,6 +230,7 @@ small {
 .title:hover {
   opacity: 1;
 }
+
 
 
 #images {
@@ -364,6 +381,27 @@ body, html {
 	#title p {
 
 	}
+  .homepage {
+    width: 90%;
+  }
+
+  .grid {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 24px;
+    overflow: hidden;
+  }
+
+  .grid>img {
+  max-width: 100%;
+  top: 0;
+  transform: none;
+  }
+
+  .info {
+    width: 100%;
+    margin-bottom: 36px;
+  }
 
 }
 

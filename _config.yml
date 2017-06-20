@@ -1,5 +1,6 @@
 ---
 title: Sage Brown
+title-2: Photgrapher — Portland, Oregon
 timezone: UTC
 collections:
   posts:
@@ -18,20 +19,17 @@ defaults:
   values:
     layout: gallery
     permalink: "/:title/"
-    hero-image: 
-    images: 
+    hero-image:
+    images:
 - scope:
     path: ''
     type: homepage
   values:
-    image: 
-    link: 
+    image:
+    link:
 email: sage.brown@gmail.com
-description: Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for Google search
-  results) and in your feed.xml site description.
+description: Sage Brown, editorial and commercial photographer in Portland, Oregon.
 baseurl: ''
 url: http://sagebrown.com
-twitter_username: sage_brown
-github_username: jekyll
+
 markdown: kramdown
