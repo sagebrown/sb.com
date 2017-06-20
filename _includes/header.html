@@ -7,6 +7,7 @@
     <ul class="section primary">
       {% assign sorted = site.posts | sort:"order" %}
 
+      <li><strong>PROJECTS</strong></li>
     {% for post in sorted %}
       <li>
         <a href="{{ post.url }}"{% if post.order == page.order %}class="selected"{% endif %}>{{ post.title }}</a>

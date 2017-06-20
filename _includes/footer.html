@@ -1,20 +1,26 @@
   <div id="footer">
-  <ul class="section primary">
-  	<li><a href="fieldwork.html" class="">Fieldwork</a></li>
-  	<li><a href="intersections.html">Intersections</a></li>
-  	<li><a href="comesidice.html">Come si Dice</a></li>
-  </ul>
 
-  <ul class="section secondary">
-  	<li>Info</li>
-  	<li>Shop</li>
-  	<li>Blog</li>
-  </ul>
+      <ul class="section primary">
+        {% assign sorted = site.posts | sort:"order" %}
 
-  <div class="section social">
-  	<a href="http://instagram.com/sagebrown" class="instagram">Instagram</a>
-  	<a href="http://twitter.com/sage_brown" class="twitter">Twitter</a>
-  </div>
+        <li><strong>PROJECTS</strong></li>
+      {% for post in sorted %}
+        <li>
+          <a href="{{ post.url }}"{% if post.order == page.order %}class="selected"{% endif %}>{{ post.title }}</a>
+        </li>
+      {% endfor %}
+      </ul>
+
+      <ul class="section secondary">
+        <li>Info</li>
+        <li>Shop</li>
+        <li>Blog</li>
+      </ul>
+
+      <div class="section social">
+        <a href="http://instagram.com/sagebrown" class="instagram">Instagram</a>
+        <a href="http://twitter.com/sage_brown" class="twitter">Twitter</a>
+      </div>
 </div> <!-- footer -->
 
 <script type="text/javascript" src="/js/jquery-1.11.3.min.js"></script>
@@ -23,38 +29,44 @@
 
 <script type="text/javascript" charset="utf-8">
 
-
-			var numImages = $(".row").children().length+1;
+      var currentImage = 0;
+			var numImages = $(".row").children().length;
+      var pageImages = $(".row").children();
+      var containerLeft;
 			var imgMargin = 50;
-			var scrollPos = $("#container").scrollLeft();
 
-			$(document).ready(setWidth());
+			//$(document).ready(setWidth());
 			$(window).on('load', function() {
 				setWidth();
+
+        $(".title").css("line-height", $(".title").height() + "px");
 				//jQuery.easing.def = "easeOutQuad";
 			});
 
 			$(window).on('resize', function() {
 				setWidth();
+        $(".title").css("line-height", $(".title").height() + "px");
 			});
 
 			function setWidth() {
-				var totalWidth = 0;
-				$(".row").children().each(function() {
-					totalWidth += $(this).width();
-				});
+        if($(".row").length > 0) {
+  				var totalWidth = 0;
+  				$(".row").children().each(function() {
+  					totalWidth += $(this).width();
+  				});
 
-			  	$(".row").width(totalWidth + (numImages*imgMargin));
-			  	//console.log($(".row").width());
-			  	rowX = $(".row").position().left;
+  			  	$(".row").width(totalWidth + (numImages*imgMargin));
+  			  	console.log($(".row").width());
+  			  	rowX = $(".row").position().left;
 
-			  	//set title size
-			  	$("#title").width($(".row img").height()*.8);
+  			  	//set title size
+  			  	$("#title").width($(".row img").height()*.8);
 
+          //set container left position
+            containerLeft = $("#container").position().left;
+            console.log("setWidth");
+          }
 		  	}
-
-
-
 
 			$("#getPos").click(function() {
 				navWidth = $("#nav").outerWidth();
@@ -62,13 +74,72 @@
 
 			});
 
+      $("body").keydown(function(e) {
+        if(e.keyCode == 37) { // left
+          if(currentImage > 0) {
+            currentImage--;
+            scrollTo(currentImage);
+          }
+        }
+        else if(e.keyCode == 39) { // right
+          if(currentImage < numImages-2) {
+            currentImage++;
+            scrollTo(currentImage);
+          }
+        }
+      });
+
+      $("#next").click(function(){
+        if(currentImage < numImages-2) {
+          currentImage++;
+          scrollTo(currentImage)
+        }
+      });
+
+      $("#previous").click(function(){
+        if(currentImage > 0) {
+          currentImage--;
+          scrollTo(currentImage)
+        }
+      });
+
+      function scrollTo(where) {
+        if(currentImage > 0) {
+          $("#previous").css("cursor", "w-resize")
+        } else {
+          $("#previous").css("cursor", "default")
+        }
+
+        if(currentImage == numImages-2) {
+          $("#next").css("cursor", "default")
+        } else {
+          $("#next").css("cursor", "e-resize")
+        }
+
+        $("#container").animate({
+					scrollLeft: $(pageImages[where]).position().left
+				}, 500, function(){
+					//do something
+  			});
+      }
+
+      $("html").scroll(function(){
+        console.log(true);
+      });
+
+      //KEEP
+      //click image to advance
+      /*
 			$(".row>img").click(function(){
 				$("#container").animate({
 					scrollLeft: $(this).position().left
 				}, 500, function(){
-					//done
+					if($(this).position().left == containerLeft) {
+            console.log($(this))
+          }
 			});
-				});
+    });*/
+
 
 
 			/*$("#title").click(function(){
@@ -80,34 +151,7 @@
 			}); */
 
 
-				//console.log()
 
-				/*$(".row").animate({
-					left: "-=" + distance
-				}, 600, function () {
-					//done animating
-				});*/
-
-
-			/*$('body').on('mousewheel', function(event) {
-				if(event.deltaY > 0) {
-					scrollPos += 20;
-					//down
-				} else {
-					scrollPos -= 20;
-					//up
-				}
-
-			    $("#container").scrollLeft(scrollPos);
-
-			    event.preventDefault();
-			});
-
-			//$('#container').mousewheel(function(event) {
-			  //  $("#container").scrollLeft(event.deltaFactor);
-			//});
-
-*/
 
 
 		</script>

@@ -1,6 +1,6 @@
 ---
 title: June 08 2017
 date: 2017-06-08 23:49:00 Z
-image: "/uploads/sbrown_intersections_06.jpg"
+image: "/uploads/sbrown_comesidice-1.jpg"
+link: /comesidice/
 ---
-

@@ -2,6 +2,22 @@
 layout: default
 ---
 
+{% assign sorted = site.posts | sort:"order" %}
+
+<div id="images" class="clearfix">
+  {% for post in sorted %}
+  <div class="grid">
+    <img src="{{ post.hero-image }}">
+    <a href="{{ post.url }}" class="title">{{ post.title }}</a>
+  </div>
+  {% endfor %}
+</div>
+
+
+{% comment %}
+
+// This code pulls in a single latest post from the 'homepage' category
+
 {% assign sorted = site.homepage | sort:"date" | reverse %}
 
   {% for post in sorted %}
@@ -14,3 +30,4 @@ layout: default
         {% endif %}
         {% break %}
   {% endfor %}
+{% endcomment %}
