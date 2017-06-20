@@ -5,9 +5,6 @@ collections:
   homepage:
     title: Homepage
     output: true
-  posts:
-    title: Posts
-    output: true
   projects:
     title: Projects
     output: true
@@ -17,18 +14,18 @@ collections:
 defaults:
 - scope:
     path: ''
-    type: posts
+    type: projects
   values:
     layout: gallery
     permalink: "/:title/"
-    hero-image: 
-    images: 
+    hero-image:
+    images:
 - scope:
     path: ''
     type: homepage
   values:
-    image: 
-    link: 
+    image:
+    link:
 title-2: Photgrapher — Portland, Oregon
 email: sage.brown@gmail.com
 description: Sage Brown, editorial and commercial photographer in Portland, Oregon.
