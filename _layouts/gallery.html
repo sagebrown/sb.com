@@ -11,12 +11,12 @@
     {% include header.html %}
 
     <div id="container" class="clearfix">
-        <div id="pagination" class="clearfix">
+      <!--  <div id="pagination" class="clearfix">
           <div id="previous">&nbsp;</div>
           <div id="next">&nbsp;</div>
-        </div>
+        </div> -->
 					<div class="row v-center">
-
+            <div id="project-title"><div class="blip"></div>{{ page.title }}</div>
             {% assign contentStripped = content | strip_newlines %}
 
             {% if contentStripped != ""  %}

@@ -159,6 +159,10 @@ small {
 	/* top: 30%; */
 }
 
+#project-title {
+  display: none;
+}
+
 #pagination {
   display: none;
   position: fixed;
@@ -215,7 +219,7 @@ small {
 .title {
   position: absolute;
       /* border: 1px solid red; */
-      background: rgba(255, 255, 255, 0.75);
+      background: rgba(255, 255, 255, 0.2);
       height: 100%;
       width: 100%;
       top: 0;
@@ -225,6 +229,12 @@ small {
       -moz-transition: opacity .25s ease-out;
       -webkit-transition: opacity .25s ease-out;
       -o-transition: opacity .25s ease-out;
+      text-decoration: none !important;
+}
+
+.title span {
+  background: #fff;
+  padding: 20px;
 }
 
 .title:hover {
@@ -243,7 +253,7 @@ small {
 
 h1 {
     font-size: 28px;
-    margin-bottom: $spacing-unit;
+    margin: 32px 0;
 }
 
 .primary {
@@ -341,6 +351,22 @@ body, html {
     margin: 24px 50px;
   }
 
+  #project-title {
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  .blip {
+    display: block;
+    width: 24px;
+    border-top: 1px solid #000;
+    margin: 0px auto 12px auto;
+  }
+
+  #footer>.blip {
+    margin-bottom: 24px !important;
+  }
+
 	#nav {
     	display: none;
     }
@@ -402,8 +428,10 @@ body, html {
   }
 
   .info {
-    width: 100%;
+    width: 90%;
     margin-bottom: 36px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 }
