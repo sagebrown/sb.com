@@ -35,3 +35,9 @@ description: Sage Brown, editorial and commercial photographer in Portland, Oreg
 baseurl: ''
 url: http://sagebrown.com
 markdown: kramdown
+plugins: [jekyll-minimagick]
+mini_magick:
+  thumbnail:
+    source: _uploads
+    destination: uploads/thumbnail
+    resize: "500x500"
