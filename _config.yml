@@ -21,21 +21,22 @@ defaults:
   values:
     layout: gallery
     permalink: "/:title/"
-    hero-image:
-    images:
+    hero-image: 
+    images: 
 - scope:
     path: ''
     type: homepage
   values:
-    image:
-    link:
+    image: 
+    link: 
 title-2: Photgrapher — Portland, Oregon
 email: sage.brown@gmail.com
 description: Sage Brown, editorial and commercial photographer in Portland, Oregon.
-baseurl:
+baseurl: 
 url: http://sagebrown.com
 markdown: kramdown
-plugins: [jekyll/imgix]
+plugins:
+- jekyll/imgix
 imgix:
-  source: sagebrown.imgix.net # Your imgix source address
-  secure_url_token: d8C2wxjd8HBZ8FVq # (optional) The Secure URL Token associated with your source
+  source: sagebrown.imgix.net
+  secure_url_token: d8C2wxjd8HBZ8FVq
