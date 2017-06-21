@@ -112,6 +112,7 @@ $(document).ready(function() {
                 $children.eq(position).fadeIn(0).delay(300).fadeOut(0, loop);
             }();
           });
+        };
 
           // scrolls to a specific image
           function scrollTo(nextImg) {
@@ -166,25 +167,23 @@ $(document).ready(function() {
 
 // HOMEPAGE
 
-      // grid element rollover on homepage
-      $(".grid")
-      .mouseover(function(){
-        // if window size is above mobile breakpoint
-        // should fix this to detect for touch moreso
-        if(viewportWidth > mobileBreak) {
-          // calls rotate function for .grid element
-          $(this).rotate();
-        }
-      })
-      .mouseout(function(){
-        // if window size is above mobile breakpoint
-        // should fix this to detect for touch moreso
-        if(viewportWidth > mobileBreak) {
-          // stops the fadeIn and fadeOut actions
-         $( this ).find( "img" ).stop( true, true ).fadeOut();
-         $( this ).find( "img" ).stop( true, true ).fadeIn();
-         // hides the .secondary-thumb items
-         $(this).children("img[class*='secondary']" ).hide();
-       }
-      });
-    };
+$(".grid").mouseover(function(){
+  // if window size is above mobile breakpoint
+  // should fix this to detect for touch moreso
+  if(viewportWidth > mobileBreak) {
+    // calls rotate function for .grid element
+    $(this).rotate();
+  }
+});
+
+$(".grid").mouseout(function(){
+  // if window size is above mobile breakpoint
+  // should fix this to detect for touch moreso
+  if(viewportWidth > mobileBreak) {
+    // stops the fadeIn and fadeOut actions
+   $( this ).find( "img" ).stop( true, true ).fadeOut();
+   $( this ).find( "img" ).stop( true, true ).fadeIn();
+   // hides the .secondary-thumb items
+   $(this).children("img[class*='secondary']" ).hide();
+ }
+});
