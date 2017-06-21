@@ -35,3 +35,7 @@ description: Sage Brown, editorial and commercial photographer in Portland, Oreg
 baseurl:
 url: http://sagebrown.com
 markdown: kramdown
+plugins: [jekyll/imgix]
+imgix:
+  source: sagebrown.imgix.net # Your imgix source address
+  secure_url_token: d8C2wxjd8HBZ8FVq # (optional) The Secure URL Token associated with your source
