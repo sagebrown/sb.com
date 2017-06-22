@@ -1,7 +1,8 @@
 ---
-title: Info
+title: "Info"
 permalink: "/info/"
 layout: default
+date: 2017-06-22 17:01:00 Z
 ---
 
 <div class="info v-center">

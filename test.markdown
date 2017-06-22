@@ -6,5 +6,6 @@ layout: default
 ---
 
 <div class="info v-center">
-<img src="{{ "/uploads/sb-onthefly-1.jpg" | imgix_url }}" />
+
+
 </div>
