@@ -1,8 +1,8 @@
 ---
-title: "test"
+title: test
+date: 2017-06-22 17:01:00 Z
 permalink: "/test/"
 layout: default
-date: 2017-06-22 17:01:00 Z
 ---
 
 <div class="info v-center">

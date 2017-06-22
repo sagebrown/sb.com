@@ -1,5 +1,5 @@
 ---
-title: "Info"
+title: Info
 permalink: "/info/"
 layout: default
 ---
