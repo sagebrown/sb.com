@@ -1,6 +1,10 @@
 ---
 title: Intersections
 date: 2017-06-01 01:00:00 Z
+tags:
+- personal
+homepage-feature: 1
+order: 4
 hero-image: "/uploads/sbrown_intersections_07.jpg"
 images:
 - "/uploads/sbrown_intersections_01.jpg"
@@ -16,7 +20,5 @@ images:
 - "/uploads/sbrown_intersections_11.jpg"
 - "/uploads/sbrown_intersections_12.jpg"
 - "/uploads/sbrown_intersections_13.jpg"
-homepage-feature: 1
-order: 4
 ---
 
