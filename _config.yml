@@ -17,7 +17,7 @@ collections:
 defaults:
 - scope:
     path: ''
-    type: projects, commissioned
+    type: "projects", "commissioned"
   values:
     layout: gallery
     permalink: "/:title/"
