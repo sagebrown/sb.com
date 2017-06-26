@@ -1,6 +1,10 @@
 ---
 title: On the Fly
 date: 2017-06-01 01:00:00 Z
+tags:
+- personal
+homepage-feature: 0
+order: 3
 hero-image: "/uploads/sb-onthefly-16.jpg"
 images:
 - "/uploads/sb-onthefly-1.jpg"
@@ -22,7 +26,5 @@ images:
 - "/uploads/sb-onthefly-17.jpg"
 - "/uploads/sb-onthefly-18.jpg"
 - "/uploads/sb-onthefly-19.jpg"
-homepage-feature: 0
-order: 3
 ---
 
