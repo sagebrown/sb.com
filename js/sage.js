@@ -109,7 +109,8 @@ $(document).ready(function() {
                 position = (position + 1) % $children.length;
 
                 /* Fade element */
-                $children.eq(position).fadeIn(0).delay(300).fadeOut(0, loop);
+                // $children.eq(position).fadeIn(0).delay(300).fadeOut(0, loop);
+                $children.eq(position).show(0).delay(300).hide(0, loop);
             }();
           });
         };
@@ -181,8 +182,8 @@ $(".grid").mouseout(function(){
   // should fix this to detect for touch moreso
   if(viewportWidth > mobileBreak) {
     // stops the fadeIn and fadeOut actions
-   $( this ).find( "img" ).stop( true, true ).fadeOut();
-   $( this ).find( "img" ).stop( true, true ).fadeIn();
+   $( this ).find( "img" ).stop( true, true ).hide();
+  $( this ).find( "img" ).stop( true, true ).show();
    // hides the .secondary-thumb items
    $(this).children("img[class*='secondary']" ).hide();
  }
