@@ -1,6 +1,10 @@
 ---
 title: Come si Dice
 date: 2017-06-01 01:00:00 Z
+tags:
+- personal
+homepage-feature: 1
+order: 1
 hero-image: "/uploads/sbrown_comesidice-12.jpg"
 images:
 - "/uploads/sbrown_comesidice-1.jpg"
@@ -19,7 +23,5 @@ images:
 - "/uploads/sbrown_comesidice-14.jpg"
 - "/uploads/sbrown_comesidice-15.jpg"
 - "/uploads/sbrown_comesidice-16.jpg"
-homepage-feature: 1
-order: 1
 ---
 
