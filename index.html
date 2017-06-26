@@ -2,18 +2,15 @@
 layout: default
 ---
 
-{% assign sorted = site.projects | sort:"order" %}
+{% assign projects = site.projects | sort: 'order' %}
+
 
 <div id="images" class="clearfix">
-  {% for post in sorted %}
+  {% for post in projects limit:4 %}
   <div class="grid">
     <img src="{{ post.hero-image }}" id="{{ post.slug }}-image-0" class="hero-thumb"/>
     {% for image in post.images %}
-      {% if forloop.index < 5 %}
         <img src="{{ image }}"  id="{{ post.slug }}-image-{{ forloop.index }}" class="secondary-thumb" />
-        {% else %}
-          {% break %}
-      {% endif %}
     {% endfor %}
     <a href="{{ post.url }}" class="title"><span>{{ post.title }}</span></a>
   </div>
