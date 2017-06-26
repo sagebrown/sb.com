@@ -26,7 +26,7 @@ defaults:
     homepage-feature:
 - scope:
     path: ''
-    type: commisioned
+    type: commissioned
   values:
     layout: gallery
     permalink: "/:title/"
