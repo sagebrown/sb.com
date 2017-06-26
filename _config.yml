@@ -2,8 +2,8 @@
 title: Sage Brown
 timezone: UTC
 collections:
-  commisioned:
-    title: Commisioned
+  commissioned:
+    title: Commissioned
     output: true
   posts:
     title: Posts
