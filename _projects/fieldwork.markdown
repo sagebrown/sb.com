@@ -3,7 +3,7 @@ title: Fieldwork
 date: 2017-06-01 01:00:00 Z
 tags:
 - personal
-homepage-feature: 1
+homepage-feature: true
 order: 2
 hero-image: "/uploads/sbrown_fieldwork-5.jpg"
 images:

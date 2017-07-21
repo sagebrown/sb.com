@@ -6,14 +6,16 @@ layout: default
 
 
 <div id="images" class="clearfix">
-  {% for post in projects limit:4 %}
+  {% for post in projects limit:5 %}
+  {% if post.homepage-feature == true %}
   <div class="grid">
     <img src="{{ post.hero-image }}" id="{{ post.slug }}-image-0" class="hero-thumb"/>
-    {% for image in post.images %}
+    {% for image in post.images limit:4 %}
         <img src="{{ image }}"  id="{{ post.slug }}-image-{{ forloop.index }}" class="secondary-thumb" />
     {% endfor %}
     <a href="{{ post.url }}" class="title"><span>{{ post.title }}</span></a>
   </div>
+  {% endif %}
   {% endfor %}
 </div>
 

@@ -1,14 +1,25 @@
   <div id="footer">
       <div class="blip"></div>
       <ul class="section primary">
-        {% assign sorted = site.projects | sort:"order" %}
-
-        <li><strong>PROJECTS</strong></li>
-      {% for post in sorted %}
-        <li>
-          <a href="{{ post.url }}"{% if post.order == page.order %}class="selected"{% endif %}>{{ post.title }}</a>
-        </li>
-      {% endfor %}
+        <li><strong>PERSONAL</strong></li>
+        {% for post in projects-sorted %}
+          {% if post.tags contains 'personal' %}
+            <li>
+              <a href="{{ post.url }}"{% if post.title == page.title %}class="selected"{% endif %}>{{ post.title }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+        {% comment %}
+        <li>&nbsp;</li>
+        <li><strong>COMISSIONED</strong></li>
+        {% for post in commissioned-sorted %}
+          {% if post.tags contains 'commissioned' %}
+            <li>
+              <a href="{{ post.url }}"{% if post.title == page.title %}class="selected"{% endif %}>{{ post.title }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+        {% endcomment %}
       </ul>
 
       <ul class="section secondary">

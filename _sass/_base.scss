@@ -160,9 +160,13 @@ small {
 	/* border: 1px solid red; */
 	/* padding: 96px 0 0 0; */
 	float: left;
-	margin: 0px 35% 0 10%;
+	margin: 0px 35% 24px 10%;
 	font-size: 14px;
 	/* top: 30%; */
+}
+
+#title>div {
+  overflow: auto;
 }
 
 #project-title {
@@ -196,7 +200,7 @@ small {
 /* HOMEPAGE */
 
 .homepage {
-  width: 80%;
+  width: 90%;
   height: 85%;
   margin: 0 15% 0 5%;
 }
@@ -323,6 +327,11 @@ strong {
   .info {
     width: 90%;
   }
+
+  .grid > img {
+    max-height: 85%;
+    max-width: 75%;
+  }
 }
 
 
@@ -433,9 +442,7 @@ body, html {
 	#title p {
 
 	}
-  .homepage {
-    width: 90%;
-  }
+
 
   .grid {
     width: 100%;
@@ -455,6 +462,10 @@ body, html {
     float: none;
     width: 100%;
     margin: 12px auto;
+  }
+
+  .info {
+    margin: 0 auto;
   }
 
 }
