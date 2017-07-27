@@ -14,7 +14,6 @@ layout: default
     <div class="col">
       <strong>Select clients</strong>
       <ul>
-        <li>Billabong USA</li>
         <li>Instrument</li>
         <li>KEEN</li>
         <li>Land's End</li>

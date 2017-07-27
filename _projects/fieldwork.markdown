@@ -22,5 +22,3 @@ images:
 - "/uploads/sbrown_fieldwork-13.jpg"
 - "/uploads/sbrown_fieldwork-14.jpg"
 ---
-
-This is a story about blah blah blah. And then we were in a truck. And then deer. And then dhtis sngdjklfng .
