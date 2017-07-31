@@ -28,7 +28,7 @@ layout: default
 
     <div class="col">
       <strong>Get in touch</strong>
-      <p><a href="mailto:sage.brown@gmail.com">sage.brown@gmail.com</a><br>
+      <p><a href="mailto:sage@sagebrown.com">sage@sagebrown.com</a><br>
       (804) 248-9586</p>
     </div>
 
