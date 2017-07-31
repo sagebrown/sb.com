@@ -7,9 +7,9 @@ layout: default
 
 <div class="info v-center">
   <h2>Sage is a Portland based editorial and commercial photographer.<br>
-     His work explores the notions of culture, place, and nature.</h2>
+     His work explores notions of culture, place, and nature.</h2>
 
-  <p>He is available for assignments worldwide and would love to hear from you.</p>
+  <p>Sage is available for assignments worldwide and would love to hear from you.</p>
   <div class="blip"> &nbsp; </div>
     <div class="col">
       <strong>Select clients</strong>
