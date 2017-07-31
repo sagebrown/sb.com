@@ -18,7 +18,7 @@ layout: default
         <li>KEEN</li>
         <li>Land's End</li>
         <li>Oregon Natural Desert Association</li>
-        <li>Sage / Far Bank Enterprises</li>
+        <li>Sage Fly Fishing / Far Bank Enterprises</li>
         <li>Sequoia Venture Capital</li>
         <li>Tretiak Works</li>
         <li>Western Rivers Conservancy</li>
