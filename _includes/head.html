@@ -3,9 +3,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="google-site-verification" content="ZRj3FrzUgxV1tYayXxn7lLRMT9uIJqj6OjI8cL8MJ-A" />
 
   <title>{% if page.title %}{{ site.title | escape }} — {{ page.title | escape }}{% else %}{{ site.title | escape }} — {{ site.title-2 | escape }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
@@ -33,6 +34,7 @@
 
   ga('create', 'UA-4479681-1', 'auto');
   ga('send', 'pageview');
+  </script>
 
-</script>
+
 </head>
