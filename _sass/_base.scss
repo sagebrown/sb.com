@@ -1,14 +1,11 @@
-@font-face {
-    font-family: 'CallunaSansRegular';
-    src: url('CallunaSansRegular-webfont.woff2') format('woff2'),
-         url('CallunaSansRegular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url("//hello.myfonts.net/count/345984");
+@font-face {font-family: 'TabacGlamG4-Bold';src: url('/webfonts/345984_0_0.eot');src: url('/webfonts/345984_0_0.eot?#iefix') format('embedded-opentype'),url('/webfonts/345984_0_0.woff2') format('woff2'),url('/webfonts/345984_0_0.woff') format('woff'),url('/webfonts/345984_0_0.ttf') format('truetype');}
+@font-face {font-family: 'TabacGlamG2Medium';src: url('/webfonts/345984_1_0.eot');src: url('/webfonts/345984_1_0.eot?#iefix') format('embedded-opentype'),url('/webfonts/345984_1_0.woff2') format('woff2'),url('/webfonts/345984_1_0.woff') format('woff'),url('/webfonts/345984_1_0.ttf') format('truetype');}
+
 
 html, body {
-    font-family: 'CallunaSansRegular', Arial, sans-serif;
-    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
     line-height: 24px;
     padding: 0 !important;
     margin: 0 !important;
@@ -33,6 +30,14 @@ html, body {
     width: 15%;
     padding: 0 50px 0 90px;
     float: left;
+}
+
+.sb-stacked {
+  width: 110px;
+}
+
+.sb-horizontal {
+  width: 220px;
 }
 
 ul {
@@ -266,12 +271,19 @@ h1 {
     margin: 32px 0;
 }
 
+h2 {
+  font-family: TabacGlamG2Medium;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+
 .primary {
-    font-size: $base-font-size;
+    font-size: 13px;
 }
 
 .secondary {
-    font-size: $secondary-font-size;
+    font-size: 11px;
     color: $secondary-color;
 }
 
@@ -289,8 +301,9 @@ h1 a:hover {
 }
 
 strong {
-  font-size: 11px;
-  letter-spacing: 1px;
+  font-family: TabacGlamG4-Bold;
+  font-size: 10px;
+  letter-spacing: 2px;
   text-transform: uppercase;
 }
 
