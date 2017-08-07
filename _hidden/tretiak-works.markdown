@@ -5,12 +5,5 @@ categories:
 - hidden
 hidden: 1
 images:
-- "/uploads/SB_TRETIAK_WORKS_17_0354.jpg"
-- "/uploads/SB_TRETIAK_WORKS_28_0747.jpg"
-- "/uploads/SB_TRETIAK_WORKS_04_0229.jpg"
-- "/uploads/SB_TRETIAK_WORKS_15_0460.jpg"
-- "/uploads/SB_TRETIAK_WORKS_46_0580.jpg"
-- "/uploads/SB_TRETIAK_WORKS_32_0846.jpg"
-- "/uploads/SB_TRETIAK_WORKS_20_0492.jpg"
+- "/uploads/sb-tretiak-1.jpg"- "/uploads/sb-tretiak-2.jpg"- "/uploads/sb-tretiak-3.jpg"- "/uploads/sb-tretiak-4.jpg"- "/uploads/sb-tretiak-5.jpg"- "/uploads/sb-tretiak-6.jpg"- "/uploads/sb-tretiak-7.jpg"- "/uploads/sb-tretiak-8.jpg"
 ---
-
