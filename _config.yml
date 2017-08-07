@@ -31,9 +31,6 @@ defaults:
   values:
     layout: gallery
     permalink: "/:title/"
-    homepage-feature:
-    order:
-    hero-image:
     images:
 title-2: Photographer — Portland, Oregon
 email: sage.brown@gmail.com
