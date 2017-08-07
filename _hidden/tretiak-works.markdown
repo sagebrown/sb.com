@@ -5,5 +5,13 @@ categories:
 - hidden
 hidden: 1
 images:
-- "/uploads/sb-tretiak-1.jpg"- "/uploads/sb-tretiak-2.jpg"- "/uploads/sb-tretiak-3.jpg"- "/uploads/sb-tretiak-4.jpg"- "/uploads/sb-tretiak-5.jpg"- "/uploads/sb-tretiak-6.jpg"- "/uploads/sb-tretiak-7.jpg"- "/uploads/sb-tretiak-8.jpg"
+- "/uploads/sb-tretiak-1.jpg"
+- "/uploads/sb-tretiak-2.jpg"
+- "/uploads/sb-tretiak-3.jpg"
+- "/uploads/sb-tretiak-4.jpg"
+- "/uploads/sb-tretiak-5.jpg"
+- "/uploads/sb-tretiak-6.jpg"
+- "/uploads/sb-tretiak-7.jpg"
+- "/uploads/sb-tretiak-8.jpg"
 ---
+
