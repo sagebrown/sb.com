@@ -5,4 +5,6 @@ permalink: "/shop/zine/"
 layout: default
 ---
 
-Buy the zine! 
+<div class="info v-center">
+  BUY NOW
+</div>
