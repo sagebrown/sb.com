@@ -6,6 +6,8 @@ layout: default
 ---
 
 <div class="info v-center">
+<img src="/uploads/sb-zine-2017.jpg" width="600">
+<p>2017<br><strong>Hi, my name is Sage</strong></p>
 <p>A collection of forgotten photos from the past several years.</p>
 
 <p>- Digital offset<br>
