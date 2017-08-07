@@ -2,7 +2,7 @@
 title: Sage Brown
 timezone: UTC
 collections:
-  hidden-projects:
+  hidden:
     title: Hidden
     output: true
   posts:
