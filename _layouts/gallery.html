@@ -35,7 +35,11 @@
               <img src="{{ image }}" />
             {% endfor %}
             
+            {% if page.categories == empty %}
               {% include pagination.html %}
+            {% endif %}
+
+
 					</div> <!-- row -->
 				</div>	<!-- container -->
 			</div>
