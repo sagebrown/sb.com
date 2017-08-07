@@ -6,7 +6,7 @@ layout: default
 ---
 
 <div class="shop v-center">
-  <img src="/uploads/sb-zine-2017.jpg" style="max-width: 80%">
+  <img src="/uploads/sb-zine-2017.jpg" />
 
   <div class="details v-center">
   <h2>Hi, my name is Sage</h2>

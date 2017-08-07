@@ -424,6 +424,10 @@ body, html {
     margin: 12px auto 12px auto;
   }
 
+  #footer {
+    clear: both;
+  }
+
   #footer>.blip {
     margin-bottom: 14px !important;
   }
@@ -495,6 +499,21 @@ body, html {
 
   .info {
     margin: 0 auto;
+  }
+
+  .shop {
+
+  }
+
+  .shop img {
+    max-width: 100%;
+    float: none;
+  }
+
+  .details {
+    clear: both;
+    float: none;
+    margin: 20px 0 40px 0
   }
 
 }
