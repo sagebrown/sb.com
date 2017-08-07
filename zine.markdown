@@ -5,13 +5,10 @@ permalink: "/shop/zine/"
 layout: default
 ---
 
-<div class="info v-center">
-  <div class="col">
-    <img src="/uploads/SB-ZINE-2.jpg" style="max-width: 80%">
-    <img src="/uploads/SB-ZINE-3.jpg" style="max-width: 80%">
-    <img src="/uploads/SB-ZINE-4.jpg" style="max-width: 80%">
-  </div>
-  <div class="col">
+<div class="shop v-center">
+  <img src="/uploads/sb-zine-2017.jpg" style="max-width: 80%">
+
+  <div class="details v-center">
   <h2>Hi, my name is Sage</h2>
   <p>A self-published collection of forgotten photos from the past several years.</p>
 
