@@ -15,7 +15,7 @@ layout: default
   <p>- Digital offset<br>
   - Full color<br>
   - 36 pages<br>
-  - 6x9"
+  - 6x9"<br>
   - Edition of 50</p>
 
   <p>$15 shipped</p>
