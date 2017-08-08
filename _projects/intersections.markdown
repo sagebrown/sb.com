@@ -5,20 +5,21 @@ tags:
 - personal
 homepage-feature: true
 order: 4
-hero-image: "/uploads/sbrown_intersections_07.jpg"
+hero-image: "/uploads/sbrown_intersections-07.jpg"
 images:
-- "/uploads/sbrown_intersections_01.jpg"
-- "/uploads/sbrown_intersections_02.jpg"
-- "/uploads/sbrown_intersections_03.jpg"
-- "/uploads/sbrown_intersections_04.jpg"
-- "/uploads/sbrown_intersections_05.jpg"
-- "/uploads/sbrown_intersections_06.jpg"
-- "/uploads/sbrown_intersections_07.jpg"
-- "/uploads/sbrown_intersections_08.jpg"
-- "/uploads/sbrown_intersections_09.jpg"
-- "/uploads/sbrown_intersections_10.jpg"
-- "/uploads/sbrown_intersections_11.jpg"
-- "/uploads/sbrown_intersections_12.jpg"
-- "/uploads/sbrown_intersections_13.jpg"
+- "/uploads/sbrown_intersections-01.jpg"
+- "/uploads/sbrown_intersections-02.jpg"
+- "/uploads/sbrown_intersections-03.jpg"
+- "/uploads/sbrown_intersections-04.jpg"
+- "/uploads/sbrown_intersections-05.jpg"
+- "/uploads/sbrown_intersections-06.jpg"
+- "/uploads/sbrown_intersections-07.jpg"
+- "/uploads/sbrown_intersections-08.jpg"
+- "/uploads/sbrown_intersections-09.jpg"
+- "/uploads/sbrown_intersections-10.jpg"
+- "/uploads/sbrown_intersections-11.jpg"
+- "/uploads/sbrown_intersections-12.jpg"
+- "/uploads/sbrown_intersections-13.jpg"
+- "/uploads/sbrown_intersections-14.jpg"
+- "/uploads/sbrown_intersections-15.jpg"
 ---
-
