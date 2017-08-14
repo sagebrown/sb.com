@@ -13,5 +13,6 @@ images:
 - "/uploads/sb-tretiak-7.jpg"
 - "/uploads/sb-tretiak-8.jpg"
 hidden: 1
+hero-image: "/uploads/sb-tretiak-1.jpg"
 ---
 
