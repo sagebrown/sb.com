@@ -12,9 +12,11 @@ layout: default
   <p>Sage is available for assignments worldwide and would love to hear from you.</p>
   <div class="blip"> &nbsp; </div>
     <div class="col">
-      <strong>Select clients</strong>
+      <strong>Select clients & publications</strong>
       <ul>
+        <li>Ain't Bad Magazine</li>
         <li>Instrument</li>
+        <li>Flyfishing and Tying Journal</li>
         <li>KEEN</li>
         <li>Land's End</li>
         <li>Oregon Natural Desert Association</li>
