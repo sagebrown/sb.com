@@ -10,25 +10,24 @@
   <div class="v-center">
     <h1><a href="/"><img src="/images/sb-stacked@2x.png" alt="Sage Brown" class="sb-stacked"/></a></h1>
     <ul class="section primary">
+      <li><strong>PROJECTS</strong></li>
       {% for post in projects-sorted %}
-        {% if post.tags contains 'personal' %}
+        {% if post.tags contains 'projects' and post.homepage-feature == true %}
           <li>
             <a href="{{ post.url }}"{% if post.title == page.title %}class="selected"{% endif %}>{{ post.title }}</a>
           </li>
         {% endif %}
       {% endfor %}
 
-      {% comment %}
       <li>&nbsp;</li>
-      <li><strong>COMISSIONED</strong></li>
-      {% for post in commissioned-sorted %}
-        {% if post.tags contains 'commissioned' %}
+      <li><strong>PORTFOLIO</strong></li>
+      {% for post in projects-sorted %}
+        {% if post.tags contains 'portfolio' %}
           <li>
             <a href="{{ post.url }}"{% if post.title == page.title %}class="selected"{% endif %}>{{ post.title }}</a>
           </li>
         {% endif %}
       {% endfor %}
-      {% endcomment %}
     </ul>
 
     <ul class="section secondary">

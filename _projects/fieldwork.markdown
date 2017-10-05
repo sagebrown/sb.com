@@ -2,7 +2,7 @@
 title: Fieldwork
 date: 2017-06-01 01:00:00 Z
 tags:
-- personal
+- projects
 homepage-feature: true
 order: 2
 hero-image: "/uploads/sbrown_fieldwork-5.jpg"
@@ -22,4 +22,3 @@ images:
 - "/uploads/sbrown_fieldwork-13.jpg"
 - "/uploads/sbrown_fieldwork-14.jpg"
 ---
-

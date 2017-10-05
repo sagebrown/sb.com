@@ -1,39 +1,15 @@
 ---
-layout: default
+title: homepage
+layout: gallery
+date: 2017-08-07 21:19:00 Z
+categories:
+- hidden
+images:
+- "/uploads/sb-hp-1.jpg"
+- "/uploads/sb-hp-2.jpg"
+- "/uploads/sb-hp-3.jpg"
+- "/uploads/sb-hp-4.jpg"
+- "/uploads/sb-hp-5.jpg"
+- "/uploads/sb-hp-6.jpg"
+hero-image: "/uploads/sb-hp-1.jpg"
 ---
-
-{% assign projects = site.projects | sort: 'order' %}
-
-
-<div id="images" class="clearfix">
-  {% for post in projects limit:5 %}
-  {% if post.homepage-feature == true %}
-  <div class="grid">
-    <img src="{{ post.hero-image }}" id="{{ post.slug }}-image-0" class="hero-thumb"/>
-    {% for image in post.images limit:4 %}
-        <img src="{{ image }}"  id="{{ post.slug }}-image-{{ forloop.index }}" class="secondary-thumb" />
-    {% endfor %}
-    <a href="{{ post.url }}" class="title"><span>{{ post.title }}</span></a>
-  </div>
-  {% endif %}
-  {% endfor %}
-</div>
-
-
-{% comment %}
-
-// This code pulls in a single latest post from the 'homepage' category
-
-{% assign sorted = site.homepage | sort:"date" | reverse %}
-
-  {% for post in sorted %}
-        {% if post.link %}
-          <a href="{{post.link}}">
-            <img src="{{ post.image }}" />
-          </a>
-        {% else %}
-          <img src="{{ post.image }}" />
-        {% endif %}
-        {% break %}
-  {% endfor %}
-{% endcomment %}

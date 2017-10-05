@@ -7,12 +7,7 @@
 
     {% include header.html %}
 
-    <script>
-    fbq('track', 'ViewContent', {
-    value: 3.50,
-    currency: 'USD'
-    });
-    </script>
+
 
 
     <div id="container" class="clearfix">
@@ -34,7 +29,7 @@
             {% for image in page.images %}
               <img src="{{ image }}" />
             {% endfor %}
-            
+
             {% if page.categories == empty %}
               {% include pagination.html %}
             {% endif %}

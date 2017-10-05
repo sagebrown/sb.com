@@ -2,7 +2,7 @@
 title: On the Fly
 date: 2017-06-01 01:00:00 Z
 tags:
-- personal
+- projects
 homepage-feature: true
 order: 3
 hero-image: "/uploads/sbrown_onthefly-16.jpg"
@@ -26,4 +26,3 @@ images:
 - "/uploads/sbrown_onthefly-17.jpg"
 - "/uploads/sbrown_onthefly-18.jpg"
 ---
-
