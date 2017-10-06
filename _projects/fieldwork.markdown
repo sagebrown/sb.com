@@ -4,7 +4,7 @@ date: 2017-06-01 01:00:00 Z
 tags:
 - projects
 homepage-feature: true
-order: 2
+order: 1
 hero-image: "/uploads/sbrown_fieldwork-5.jpg"
 images:
 - "/uploads/sbrown_fieldwork-1.jpg"

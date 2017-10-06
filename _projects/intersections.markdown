@@ -4,7 +4,7 @@ date: 2017-06-01 01:00:00 Z
 tags:
 - projects
 homepage-feature: true
-order: 4
+order: 2
 hero-image: "/uploads/sbrown_intersections-07.jpg"
 images:
 - "/uploads/sbrown_intersections-01.jpg"
