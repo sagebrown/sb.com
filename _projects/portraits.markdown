@@ -5,21 +5,20 @@ tags:
 - portfolio
 homepage-feature: false
 order: 4
-hero-image: "/uploads/sb-portrait-8.jpg"
+hero-image: "/uploads/sb-portrait-4.JPG"
 images:
-- "/uploads/sb-portrait-1.jpg"
-- "/uploads/sb-portrait-2.jpg"
-- "/uploads/sb-portrait-3.jpg"
-- "/uploads/sb-portrait-4.jpg"
-- "/uploads/sb-portrait-5.jpg"
-- "/uploads/sb-portrait-6.jpg"
-- "/uploads/sb-portrait-7.jpg"
-- "/uploads/sb-portrait-8.jpg"
-- "/uploads/sb-portrait-9.jpg"
-- "/uploads/sb-portrait-10.jpg"
-- "/uploads/sb-portrait-11.jpg"
-- "/uploads/sb-portrait-12.jpg"
-- "/uploads/sb-portrait-13.jpg"
-- "/uploads/sb-portrait-14.jpg"
+- "/uploads/sb-portrait-1.JPG"
+- "/uploads/sb-portrait-2.JPG"
+- "/uploads/sb-portrait-3.JPG"
+- "/uploads/sb-portrait-4.JPG"
+- "/uploads/sb-portrait-5.JPG"
+- "/uploads/sb-portrait-6.JPG"
+- "/uploads/sb-portrait-7.JPG"
+- "/uploads/sb-portrait-8.JPG"
+- "/uploads/sb-portrait-9.JPG"
+- "/uploads/sb-portrait-10.JPG"
+- "/uploads/sb-portrait-11.JPG"
+- "/uploads/sb-portrait-12.JPG"
+- "/uploads/sb-portrait-13.JPG"
+- "/uploads/sb-portrait-14.JPG"
 ---
-
