@@ -23,7 +23,6 @@ images:
 - "/uploads/sbrown_onthefly-14.jpg"
 - "/uploads/sbrown_onthefly-15.jpg"
 - "/uploads/sbrown_onthefly-16.jpg"
-- "/uploads/sbrown_onthefly-17.jpg"
 - "/uploads/sbrown_onthefly-18.jpg"
 ---
 
