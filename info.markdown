@@ -6,7 +6,7 @@ layout: default
 ---
 
 <div class="info v-center">
-  <h2>Sage is a Portland based photographer.<br>
+  <h2>Sage is a Portland based photographer.</h2>
 
   <p>Sage is available for assignments worldwide and would love to hear from you.</p>
   <div class="blip"> &nbsp; </div>
