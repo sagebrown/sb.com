@@ -10,20 +10,28 @@ layout: default
 
   <p>Sage is available for assignments worldwide and would love to hear from you.</p>
   <div class="blip"> &nbsp; </div>
+
     <div class="col">
-      <strong>Select clients & publications</strong>
+      <strong>Clients</strong>
       <ul>
-        <li>Ain't Bad Magazine</li>
         <li>Instrument</li>
-        <li>Flyfishing and Tying Journal</li>
         <li>KEEN</li>
         <li>Land's End</li>
         <li>Oregon Natural Desert Association</li>
-        <li>Sage Fly Fishing / Far Bank Enterprises</li>
+        <li>Patagonia</li>
+        <li>SAGE Fly Fishing</li>
         <li>Sequoia Venture Capital</li>
-        <li>Tretiak Works</li>
         <li>Western Rivers Conservancy</li>
         <li>Zangs Films</li>
+      </ul>
+    </div>
+
+    <div class="col">
+      <strong>Publications</strong>
+      <ul>
+        <li><a href="https://www.aint-bad.com/product/magazines/curators-choice/" target="aintbad" class="link-out">Ain’t Bad Magazine</a></li>
+        <li>Flyfishing and Tying Journal</li>
+        <li><a href="https://www.photo-emphasis.com/artists/sage-brown-2017" target="emphasis" class="link-out">PHOTO-EMPHASIS</a></li>
       </ul>
     </div>
 

@@ -86,7 +86,7 @@ ul {
 /* INFO */
 
 .info {
-    width: 70%;
+    width: 80%;
     overflow: auto;
 }
 
@@ -101,7 +101,13 @@ ul {
 
 .col {
   float: left;
-  width: 40%;
+  width: 25%;
+  margin-right: 5%;
+}
+
+.link-out {
+  background: url(/images/link.png) center right no-repeat;
+  padding-right: 16px;
 }
 /* Gallery */
 
