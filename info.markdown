@@ -14,6 +14,7 @@ layout: default
     <div class="col">
       <strong>Clients</strong>
       <ul>
+        <li>Bloomberg Businessweek</li>
         <li>Instrument</li>
         <li>KEEN</li>
         <li>Land's End</li>
